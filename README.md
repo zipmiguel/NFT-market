@@ -1,1 +1,1 @@
-# zipmiguel-NFT-market
+# NFT-market
