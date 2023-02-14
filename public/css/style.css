@@ -17,15 +17,19 @@ body{
     background-image: url(../img/img-bg.svg);
 }
 
+.navbar {
+    margin: 1.3vw 0 1.3vw 0;
+}
+
 a.nav-link {
     color: var(--white-color);
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-weight: 300;
 }
 
 a.nav-link:hover {
     color: var(--white-color);
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-weight: 700;
 }
 
@@ -34,3 +38,54 @@ a.nav-link:hover {
     padding-right: 0.7rem;
 }
 
+button.navbar-toggler {
+   border: 0.5px solid var(--white-color);
+}
+
+div.container {
+    max-width: 110rem;
+    padding: 0 6vmin 0 6vmin;
+}
+
+
+.container h1 {
+    padding: 13vw 0 0 0;
+    font-size: 6.5rem;
+    font-weight: 800;
+    line-height: 6.5rem;
+}
+
+#logos-stores {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    width:50rem;
+    padding: 2.5rem 0;
+}
+
+#app-store{
+    padding:0 0 0 3rem;
+}
+
+@media (max-width: 960px ) {
+    .navbar {
+        margin: 5vw 0 5vw 0;
+    }
+
+    .container h1 { 
+        font-size: 4rem; 
+        line-height: 4rem;
+    }
+    
+    #google-play img {
+        max-height:5rem;
+    }
+    
+    #app-store img {
+        max-height:5rem;
+    } 
+
+    #app-store{
+        padding:0 0 0 8vw;
+    }
+}
