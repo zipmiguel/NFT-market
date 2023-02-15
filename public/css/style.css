@@ -47,6 +47,12 @@ div.container {
     padding: 0 6vmin 0 6vmin;
 }
 
+#conteudo-home-page {
+    max-width: 110rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 .container h1 {
     padding: 13vw 0 0 0;
@@ -56,15 +62,40 @@ div.container {
 }
 
 #logos-stores {
-    /* border: 1px solid red; */
     display: flex;
     justify-content: flex-start;
     width:50rem;
     padding: 2.5rem 0;
 }
 
+#google-play img:hover{
+    height:6.5rem;
+}
+
 #app-store{
     padding:0 0 0 3rem;
+}
+
+#app-store img:hover{
+    height:6.5rem;
+}
+
+#card-home-page img {
+    max-width: 45rem;
+    animation: downUp 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes downUp {
+    from {
+        padding-top: 0rem;
+    }
+    50% {
+        padding-top: 4rem;
+    }
+    to {
+        padding-top: 0rem;
+    }
 }
 
 @media (max-width: 960px ) {
@@ -88,4 +119,8 @@ div.container {
     #app-store{
         padding:0 0 0 8vw;
     }
+    #card-home-page img {
+        max-width: 35rem;
+    }
 }
+
