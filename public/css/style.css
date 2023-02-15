@@ -21,6 +21,15 @@ body{
     margin: 1.3vw 0 1.3vw 0;
 }
 
+.container-navbar {
+    width: 100vw;
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6vmin 0 6vmin;
+}
+
 a.nav-link {
     color: var(--white-color);
     font-size: 1.7rem;
