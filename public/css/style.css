@@ -1,6 +1,7 @@
 :root{
     --white-color: #fff; 
     --black-color: #000;
+    --subtitle-color: #FFA7FF;
 }
 
 *{
@@ -58,6 +59,7 @@ div.container {
 
 #conteudo-home-page {
     max-width: 110rem;
+    height: 70rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -107,6 +109,70 @@ div.container {
     }
 }
 
+#conteudo-popular-artwork {
+    display: flex;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+h4.section-subtitle {
+    color: var(--subtitle-color);
+    font-size: 1.6rem;
+}
+
+h3.section-title {
+    color: var(--white-color);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.filters-buttons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem 0 0 0;    
+}
+
+.background-button-filter {
+    display: flex;
+    width: auto;
+    margin: auto;
+    height: 4rem;
+    margin:0 0.7rem 0 0.7rem;
+    padding:0 0.35rem 0 0.35rem;
+    box-sizing: content-box;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(-30deg,  #F600DD, #9A4DFF); */
+    background-color: #1f1a28;;
+    color: var(--white-color);
+    border-radius: 1rem;
+    text-decoration: none;
+}
+
+.filter-button-artwork{
+    display: flex;
+    width: auto;
+    margin: auto;
+    height: 3rem;
+    padding: 0 1.5rem 0 1.5rem;
+    box-sizing: content-box;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    white-space: nowrap;
+    background-color: #1f1a28;
+    color: var(--white-color);
+    border-radius: 1rem;
+    border-color: transparent;
+}
+
+.background-button-filter:hover {
+    background: linear-gradient(-30deg,  #F600DD, #9A4DFF);
+}
+
 @media (max-width: 960px ) {
     .navbar {
         margin: 5vw 0 5vw 0;
@@ -117,6 +183,11 @@ div.container {
         line-height: 4rem;
     }
     
+    #conteudo-home-page {
+        height: 70rem;
+        margin-bottom: 10rem;
+    }
+
     #google-play img {
         max-height:5rem;
     }
@@ -129,7 +200,7 @@ div.container {
         padding:0 0 0 8vw;
     }
     #card-home-page img {
-        max-width: 35rem;
+        max-width: 34rem;
     }
 }
 
